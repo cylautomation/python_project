@@ -13,6 +13,9 @@ class home(Resource):
     def get(self):
         return {"data": "Hello-World"}, 200
 
+    def post(self, data):
+        return {"data": data}, 200
+
 api.add_resource(home, "/")
 
 if __name__ == "__main__":
